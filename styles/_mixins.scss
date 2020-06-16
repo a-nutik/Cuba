@@ -1,0 +1,16 @@
+@mixin drawLine($isVertical: false) {
+    color: $mainColor;
+
+    @if $isVertical {
+        width: 2px;
+    } @else {
+        height: 2px;
+    }
+
+}
+
+@mixin getText {
+    text-align: center;
+    color: #505050;
+    font-family: $fontFamily;
+}

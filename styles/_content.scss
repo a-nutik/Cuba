@@ -1,0 +1,73 @@
+.content {
+    border-bottom: 1px solid #D0D4D8;
+
+    &__title {
+        @include getText();
+        font-size: 32px;
+        margin: 80px 0 60px 0;
+    }
+
+    &__text{
+        @include getText();
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+    
+    &__link {
+        font-family: $fontFamily;
+        font-size: 15px;
+        text-decoration: none;
+        color: $mainColor;
+        font-weight: bold;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #D0D4D8;
+    }
+
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__img {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    &__caption--number {
+        text-align: center;
+        font-family: $fontFamily;
+        font-size: 22px;
+        color: #4E5665;
+        margin-bottom: 5px;
+    }
+    
+    &__caption--text {
+        text-align: center;
+        font-family: $fontFamily;
+        font-size: 14px;
+        color: #909090;
+        margin-bottom: 70px;
+    }
+
+    &__cadillac {
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    &__car {
+        width: 100%;
+    }
+
+    &__cars_shadow {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -7%;
+    }
+}
+        
